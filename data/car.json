@@ -1,0 +1,71 @@
+{
+  "car": [
+    {
+      "id": 1,
+      "price": 500,
+      "img": "fortuner.png",
+      "brand": "Toyota",
+      "type": "GR Sport",
+      "year": 2022,
+      "seat": 6,
+      "ac": "Yes",
+      "transmission": "Manual"
+    },
+    {
+      "id": 2,
+      "price": 350,
+      "img": "yaris.png",
+      "brand": "Toyota",
+      "type": "S HV",
+      "year": 2022,
+      "seat": 4,
+      "ac": "Yes",
+      "transmission": "Automatic"
+    },
+    {
+      "id": 3,
+      "price": 400,
+      "img": "innova.png",
+      "brand": "Toyota",
+      "type": "V Gasoline",
+      "year": 2022,
+      "seat": 6,
+      "ac": "Yes",
+      "transmission": "Automatic"
+    },
+    {
+      "id": 4,
+      "price": 350,
+      "img": "raize.png",
+      "brand": "Toyota",
+      "type": "GR Sport",
+      "year": 2023,
+      "seat": 4,
+      "ac": "Yes",
+      "transmission": "Automatic"
+    },
+    {
+      "id": 5,
+      "price": 500,
+      "img": "hrv.png",
+      "brand": "Honda",
+      "type": "HR-V",
+      "year": 2023,
+      "seat": 5,
+      "ac": "Yes",
+      "transmission": "Manual"
+    },
+    {
+      "id": 6,
+      "price": 450,
+      "img": "creta.png",
+      "brand": "Hyundai",
+      "type": "Creta",
+      "year": 2022,
+      "seat": 4,
+      "ac": "Yes",
+      "transmission": "Manual"
+    }
+    
+  ]
+}
