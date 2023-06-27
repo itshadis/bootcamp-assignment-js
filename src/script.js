@@ -46,7 +46,7 @@ listVariety.addEventListener('click', (e) => {
     const ac = document.querySelector('.ac');
     const transmission = document.querySelector('.transmission');
 
-    carImage.setAttribute('src', `../asset/car/${item.img}`)
+    carImage.setAttribute('src', `asset/car/${item.img}`)
     price.textContent = item.price;
     brand.textContent = item.brand;
     type.textContent = item.type;
@@ -96,7 +96,7 @@ let h = i-1;
 //function show data testomonials to ui
 let showTestimoni = () => {
   testimonialContainer.innerHTML =`
-  <img class="w-80" src="../asset/testimonial/${testimonial[i].img}" alt="">
+  <img class="w-80" src="asset/testimonial/${testimonial[i].img}" alt="">
   <div class="w-80 flex flex-col justify-around">
     <p>${testimonial[i].comment}</p>
     <h5 class="text-lg font-bold">${testimonial[i].name}</h5>
