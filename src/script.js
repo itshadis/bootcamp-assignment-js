@@ -8,6 +8,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
 //focus current list model
 const listVariety = document.querySelector('.list-variety');
 listVariety.addEventListener('click', (e) => {
@@ -61,8 +62,8 @@ listVariety.addEventListener('click', (e) => {
 const testimonial = [
   {
     name: "Harry Podder",
-    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quibusdam modi enim quisquam inventore vero aut, adipisci tenetur illum, ea velit voluptas architecto sint, consectetur nihil aspernatur excepturi alias facilis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quibusdam modi enim quisquam inventore vero aut, adipisci tenetur illum, ea velit voluptas architecto sint",
-    img: "testi1.jpg"
+    comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quibusdam modi enim quisquam inventore vero aut,  adipisci tenetur illum, ea velit voluptas architecto sint",
+    img: "testi1.png"
   },
   {
     name: "Bruno",
@@ -96,10 +97,11 @@ let h = i-1;
 //function show data testomonials to ui
 let showTestimoni = () => {
   testimonialContainer.innerHTML =`
-  <img class="w-80" src="asset/testimonial/${testimonial[i].img}" alt="">
+  <img class="w-[50%]" src="asset/testimonial/${testimonial[i].img}" alt="">
+  <span class="min-[600px]:hidden text-lg font-bold my-4">${testimonial[i].name}</span>
   <div class="w-80 flex flex-col justify-around">
-    <p>${testimonial[i].comment}</p>
-    <h5 class="text-lg font-bold">${testimonial[i].name}</h5>
+    <p class="mb-4">${testimonial[i].comment}</p>
+    <h5 class="max-[600px]:hidden text-lg font-bold">${testimonial[i].name}</h5>
   </div>
   `;
 }
