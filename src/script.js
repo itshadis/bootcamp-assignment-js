@@ -1,12 +1,52 @@
 //header fixed when scroll
+const btnNavList = document.querySelector('.btn-nav-list');
+const header = document.querySelector('.header');
+let isCheck = false;
 window.addEventListener('scroll', () => {
-  const header = document.querySelector('.header');
   if(window.scrollY > 0) {
-    header.classList.add('bg-white');
+    header.classList.add('bg-gray-900');
+    header.classList.add('text-white');
+    if(isCheck) {
+      btnNavList.setAttribute('src', 'asset/icon/cross-white.svg');
+    } else {
+      btnNavList.setAttribute('src', 'asset/icon/burger-list-white.svg');
+    }
   } else {
-    header.classList.remove('bg-white')
+    if(!isCheck) {
+      header.classList.remove('bg-gray-900');
+      header.classList.remove('text-white');
+      btnNavList.setAttribute('src', 'asset/icon/cross.svg');
+      btnNavList.setAttribute('src', 'asset/icon/burger-list.svg')
+    }
   }
 });
+
+//dropdown burger list
+const ddNavbar = document.getElementById('dd-navbar');
+btnNavList.addEventListener('click', () => {
+  isCheck = !isCheck;
+  if(isCheck) {
+    if(window.scrollY > 0) {
+      btnNavList.setAttribute('src', 'asset/icon/cross-white.svg');
+    } else {
+      btnNavList.setAttribute('src', 'asset/icon/cross.svg');
+      header.classList.add('bg-gray-900');
+      header.classList.add('text-white');
+      btnNavList.setAttribute('src', 'asset/icon/cross-white.svg');
+    }
+    ddNavbar.classList.replace('h-0', 'h-60');
+  }
+  if(!isCheck) {
+    if(window.scrollY > 0) {
+      btnNavList.setAttribute('src', 'asset/icon/burger-list-white.svg');
+    } else {
+      btnNavList.setAttribute('src', 'asset/icon/burger-list-white.svg');
+    }
+    ddNavbar.classList.replace('h-60', 'h-0');
+  }
+
+
+})
 
 
 //focus current list model
